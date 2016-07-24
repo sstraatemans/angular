@@ -4,16 +4,7 @@ import template from './home.html';
 import {HomeController} from './home.controller';
 
 describe('Home', () => {
-  let $rootScope;
-  let makeController;
 
-  beforeEach(window.module(home.name));
-  beforeEach(inject(_$rootScope_ => {
-    $rootScope = _$rootScope_;
-    makeController = (injectables) => {
-      return new BlogController(injectables);
-    };
-  }))
 
   describe('module', () => {
     it('should have an appropriate name', () => {
@@ -35,17 +26,8 @@ describe('Home', () => {
       expect(ddo.controller).to.equal(HomeController);
     });
 
-    it('should have an isolate scope', () => {
-      expect(ddo.scope).to.be.an('object');
-    });
-
     it('should use controllerAs', () => {
       expect(ddo.controllerAs).to.be.a('string');
     });
-  });
-
-
-  describe('template', ()=> {
-
   });
 });
