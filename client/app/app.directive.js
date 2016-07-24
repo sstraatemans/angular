@@ -1,4 +1,3 @@
-
 import template from './app.html';
 
 export const appDirective = ()=> {
