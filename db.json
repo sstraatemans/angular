@@ -1,0 +1,54 @@
+{
+  "characters": [
+    {
+      "id": "1",
+      "name": "Asterix",
+      "description": "Asterix is the main character. He is a brave, intelligent and shrewd warrior of somewhat diminutive size, who eagerly volunteers for all perilous missions."
+    },
+    {
+      "id": "2",
+      "name": "Obelix",
+      "description": "Obelix is Asterix's closest friend and works as a menhir sculptor and delivery man. He is a tall, obese man with two notable attributes: his phenomenal strength and his voracious appetite for food, especially wild boar. His strength results from having fallen into Getafix's magic potion cauldron as a boy. As a consequence, Getafix will not let him take additional potion for fear of side effects (for example, turning into stone, as shown in Asterix and Obelix all at Sea), something that Obelix finds immensely unfair. The only exception was in Asterix and Cleopatra when they were trapped in a pyramid and Getafix allows him to have three drops of the magic potion. Obelix's size is often the brunt of many jokes. In Asterix and the Big Fight, a druid mistakes Obelix for a patient with an eating disorder. At the end of the book, Obelix decides to go on a diet, but quickly goes back to eating huge quantities of boar."
+    },
+    {
+      "id": "3",
+      "name": "Dogmatix",
+      "description": "Dogmatix is Obelix's pet dog. Unlike his immense master, Dogmatix is very tiny, but he can have a nasty temper. Dogmatix loves nature and hates to see trees suffer. (Obelix once mentions that this is because Dogmatix likes to urinate on them.) Dogmatix met Asterix and Obelix in Lutetia (in Asterix and the Banquet) and followed them all the way around Gaul until Obelix finally noticed him when they reached the village and Dogmatix barked behind him. Since then, Obelix has become very affectionate toward Dogmatix. In Asterix and the Chieftain's Shield, Obelix gets angry with hungry people who try to take Dogmatix's bone and insists they will be punished if they try to take advantage of his dog. Dogmatix is relatively intelligent, and is particularly good as a hunting dog. His most noteworthy moments were rescuing Asterix, Obelix and Getafix from entrapment in Cleopatra, finding the captured Asterix in Great Crossing, and locating the much needed desert petroleum in Black Gold."
+    },
+    {
+      "id": "4",
+      "name": "Getafix",
+      "description": "Getafix is the village druid. In appearance, he is tall with a white beard, white robe, red cloak. He is usually seen in possession of a small golden sickle. While his age is never stated, in the story of Asterix's birth (in which all but the oldest villagers are seen as small children), he appears unchanged. In Asterix and the Big Fight, the druid Psychoanalytix (who appears quite old) refers to him as his elder and teacher. In Asterix and Obelix's Birthday: The Golden Book, as a gag, Getafix at age 50 appears to be frail and old, while in the other books, he appeared healthy."
+    },
+    {
+      "id": "5",
+      "name": "Vitalstatistix",
+      "description": "Chief Vitalstatistix is the chief of the Gaulish village. He is a middle-aged, bigbellied man with red hair, pigtails and a huge moustache. He is generally reasonable, well-informed, fearless, (comparatively) even-tempered and unambitious — the last much to the chagrin of his wife Impedimenta. His major failings are his love of good food and drink (it is unlikely to be a coincidence that his wife is the best cook in the village) — which has led to health problems — and his pride. As a Gaulish chief, he prefers to travel on a shield, carried by two shield bearers (they say pride comes before a fall... and he finds creative new ways to fall off the shield in almost every book). The names of the shield bearers are never mentioned."
+    },
+    {
+      "id": "6",
+      "name": "Impedimenta",
+      "description": "Impedimenta is the matriarchal wife of chief Vitalstatistix, leader of the village wives and the best cook in the village. She is often disappointed with the other villagers (calling them barbarians) and wishes Vitalstatistix was more ambitious. Consequently, she zealously defends and flaunts every privilege due to her as first lady of the village, such as skipping the queue at the fishmongers. She frequently says she wants to go back to Lutetia and live with her successful merchant brother, Homeopathix — the one member of the family her husband openly dislikes."
+    },
+    {
+      "id": "7",
+      "name": "Cacofonix",
+      "description": "Cacofonix is the village bard. He is usually only a supporting character, but has a major part in the plots of some albums (see Asterix and the Normans, Asterix the Gladiator, Asterix and the Magic Carpet and Asterix and the Secret Weapon). He loves singing and playing his lyre, and jumps at every opportunity to do so. He also plays the bagpipes, drum and a Celtic trumpet resembling a boar called a Carnyx. While he can accompany traditional dances, and conducts a village band, his singing is unbearable. In Asterix and the Normans it is so unbearable that it teaches the fearless Normans the meaning of fear. In recent albums his music is so spectacularly horrible that it actually starts thunderstorms (even indoors), because of an old French saying that bad singing causes rain."
+    },
+    {
+      "id": "8",
+      "name": "Geriatrix",
+      "description": "Geriatrix is the oldest inhabitant of Asterix's village: he is mentioned as 93 years old in Asterix at the Olympic Games (while drunk, he says he feels ten years younger, to which Asterix replies, \"Well, that makes you 83, and it's time you were in bed\"). Some translations make him no more than 80."
+    },
+    {
+      "id": "9",
+      "name": "Mrs. Geriatrix",
+      "description": "Mrs. Geriatrix enjoys her husband's devotion and also her status as wife of the village's most senior inhabitant, which makes her one of the inner circle of village wives. Her youthful appearance suggests that she is less than half her husband's age; she is also a lot taller. Although as ambitious and gossip-prone as the other wives, she has also shown herself to be very quick-witted. "
+    },
+    {
+      "id": "10",
+      "name": "Unhygienix",
+      "description": "Unhygienix is the village fishmonger, as was his father Unhealthix before him (as seen in Asterix and the Class Act). His fish do not come from the sea near the village even though he has a fishing boat; instead they are transported all the way from Lutetia (and from Massilia in the German translations) as he believes they are of finer quality. He does not notice their smell, but most of the other villagers do and a lot of fights are caused by his stale fish, as when the blacksmith Fulliautomatix says: \"Anyway, it [the fight] wouldn't have happened if they [the fish] were fresh!\" and then Unhygenix slaps him with his fish. "
+    }
+  ]
+}
