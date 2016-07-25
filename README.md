@@ -17,7 +17,7 @@ $ npm i
 run Json-server and keep it running.  
 This will start the REST-API on `http://localhost:3000`
 ```
-$ json-server db.json
+$ npm run json
 ```
 run Gulp in a new window and keep it running
 ```
