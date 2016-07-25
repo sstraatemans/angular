@@ -3,6 +3,8 @@ var sync    = require('run-sequence');
 var browser = require('browser-sync');
 var webpack = require('webpack-stream');
 var todo    = require('gulp-todoist');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 /*
 map of paths for using with the tasks below
@@ -13,7 +15,8 @@ var paths = {
   js: 'client/app/**/*!(.spec.js).js',
   toCopy: ['client/index.html'],
   html: ['client/index.html', 'client/app/**/*.html'],
-  dest: 'dist'
+  dest: 'dist',
+  sass: 'scss/**/*.scss'
 };
 
 gulp.task('todo', function() {
@@ -46,12 +49,21 @@ gulp.task('copy', function() {
     .pipe(gulp.dest(paths.dest));
 });
 
+gulp.task('sass', function () {
+  return gulp.src(paths.sass)
+    .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('./dist'));
+});
+
 /*
 task to watch files for changes and call build and copy tasks
  */
 gulp.task('watch', function() {
   gulp.watch(paths.app, ['build', browser.reload]);
   gulp.watch(paths.toCopy, ['copy', browser.reload]);
+  gulp.watch(paths.sass, ['sass', browser.reload]);
 });
 
 gulp.task('default', function(done) {
