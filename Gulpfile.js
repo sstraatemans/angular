@@ -3,8 +3,16 @@ var sync    = require('run-sequence');
 var browser = require('browser-sync');
 var webpack = require('webpack-stream');
 var todo    = require('gulp-todoist');
+var path    = require('path');
+var yargs   = require('yargs').argv;
+var tpl     = require('gulp-template');
+var rename  = require('gulp-rename');
+
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var phantomcss = require('gulp-phantomcss');
+
+
 
 /*
 map of paths for using with the tasks below
@@ -16,7 +24,9 @@ var paths = {
   toCopy: ['client/index.html'],
   html: ['client/index.html', 'client/app/**/*.html'],
   dest: 'dist',
-  sass: 'scss/**/*.scss'
+  sass: 'scss/**/*.scss',
+  phantomcss: './phantomcss.js',
+  blankTemplates: 'templates/component/*.**'
 };
 
 gulp.task('todo', function() {
@@ -41,6 +51,14 @@ gulp.task('serve', function() {
   });
 });
 
+
+gulp.task('phantomcss', function (){
+
+  gulp.src(paths.phantomcss)
+    .pipe(phantomcss({
+      screenshotRoot: 'test'
+    }));
+});
 /*
 simple task to copy over needed files to dist
  */
@@ -64,6 +82,32 @@ gulp.task('watch', function() {
   gulp.watch(paths.app, ['build', browser.reload]);
   gulp.watch(paths.toCopy, ['copy', browser.reload]);
   gulp.watch(paths.sass, ['sass', browser.reload]);
+});
+
+// helper function
+var resolveToComponents = function(glob){
+  glob = glob || '';
+  return path.join('client', 'app/components', glob); // app/components/{glob}
+};
+
+gulp.task('component', function(){
+  var cap = function(val){
+    return val.charAt(0).toUpperCase() + val.slice(1);
+  };
+
+  var name = yargs.name;
+  var parentPath = yargs.parent || '';
+  var destPath = path.join(resolveToComponents(), parentPath, name);
+
+  return gulp.src(paths.blankTemplates)
+    .pipe(tpl({
+      name: name,
+      upCaseName: cap(name)
+    }))
+    .pipe(rename(function(path){
+      path.basename = path.basename.replace('component', name);
+    }))
+    .pipe(gulp.dest(destPath));
 });
 
 gulp.task('default', function(done) {
