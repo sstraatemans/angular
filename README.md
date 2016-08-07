@@ -29,5 +29,9 @@ If you want you can run the karma tests
 ```
 $ npm run test
 ```
+For PhantomCSS Visual Regression tests
+```
+$ npm run visualtest
+```
 
 Enjoy!

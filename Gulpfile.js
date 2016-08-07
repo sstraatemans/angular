@@ -63,8 +63,11 @@ gulp.task('phantomcss', function (){
 simple task to copy over needed files to dist
  */
 gulp.task('copy', function() {
-  return gulp.src(paths.toCopy, { base: 'client' })
+  gulp.src(paths.toCopy, { base: 'client' })
     .pipe(gulp.dest(paths.dest));
+
+    gulp.src(['node_modules/angular-material/angular-material.min.css'], { base: 'node_modules/angular-material/' })
+      .pipe(gulp.dest(paths.dest));
 });
 
 gulp.task('sass', function () {
