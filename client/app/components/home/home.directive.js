@@ -1,4 +1,3 @@
-
 import {HomeController as controller} from './home.controller';
 import template from './home.html';
 
